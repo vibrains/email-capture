@@ -6,7 +6,7 @@ app.engine('html', hogan)
 app.set('port', (process.env.PORT || 3000))
 app.use('/', express.static(__dirname + '/public/'))
 var Cosmic = require('cosmicjs')
-var bucket_slug = process.env.COSMIC_BUCKET || 'email-capture'
+var bucket_slug = process.env.COSMIC_BUCKET || 'vibrains-email-capture'
 var config = {
   bucket: {
     slug: bucket_slug,
